@@ -19,9 +19,9 @@ export const part1 = (input: string) => {
   console.log(total);
 }
 
-const part1prod = await Bun.file('src/day1.txt').text();
+const myInput = await Bun.file('src/day1.txt').text();
 
-part1(part1prod);
+part1(myInput);
 
 const testInput2 = `two1nine
 eightwothree
@@ -58,3 +58,4 @@ export const part2 = (input: string) => {
 }
 
 part2(testInput2);
+part2(myInput);
