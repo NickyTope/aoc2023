@@ -17,10 +17,11 @@ export const part1 = (input: string) => {
   }
   const total = values.reduce((a, b) => a + Number(b), 0);
   console.log(total);
-}
+};
 
-const myInput = await Bun.file('input/day1.txt').text();
+const myInput = await Bun.file("input/day1.txt").text();
 
+part1(testInput);
 part1(myInput);
 
 const testInput2 = `two1nine
@@ -55,7 +56,7 @@ export const part2 = (input: string) => {
   }
   const total = values.reduce((a, b) => a + Number(b), 0);
   console.log(total);
-}
+};
 
 part2(testInput2);
 part2(myInput);
