@@ -19,7 +19,7 @@ export const part1 = (input: string) => {
   console.log(total);
 }
 
-const myInput = await Bun.file('src/day1.txt').text();
+const myInput = await Bun.file('input/day1.txt').text();
 
 part1(myInput);
 
